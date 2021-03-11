@@ -2,6 +2,7 @@
 //layercoding //
 const db = require("quick.db")
 client.on("message", async message => {
+  let prefix =  '!'
   if (message.content.startsWith(prefix + "blacklist")) {
     if (message.author.id !== 'ايدي اونر البوت') return;
     let args = message.content.split(" ").slice(1).join(" ")
@@ -24,6 +25,7 @@ client.on("message", async message => {
 
 client.on("message", async message => {
   if (message.content.startsWith(prefix + "unblacklist")) {
+     let prefix =  '!'
     if (message.author.id !== 'ايدي اونر البوت') return;
     let args = message.content.split(" ").slice(1).join(" ")
 
